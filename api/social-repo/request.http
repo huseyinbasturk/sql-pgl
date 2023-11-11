@@ -1,3 +1,12 @@
-http://localhost:3005/users/2
+http://localhost:3005/users/1; 
 
 
+###
+
+POST http://localhost:3005/users HTTP/1.1
+content-type: application/application/json
+
+{
+    "username": "dfeef",
+    "bio": "dsadsadasdas"
+}
