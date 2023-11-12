@@ -42,6 +42,12 @@ class UserRepo{
 
     }
 
+    static async count() {
+        const {rows} = await pool.query('select count(*) from users;');
+
+       return parseInt(rows[0].count);
+    }
+
 }
    
 module.exports = UserRepo;
